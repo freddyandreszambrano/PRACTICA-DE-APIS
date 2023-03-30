@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>curriculum vitae</title>
+    <style>
+        body{
+            font-family: "Lucida Bright";
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            border: white solid 6px;
+            display: block;
+            margin: auto;
+        }
+        h2{
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .encabezado{
+            background-color: gold;
+            border-radius: 200px 0px 200px 0px;
+        }
+        .cuerpo{
+            margin: 10px;
+            border: gold solid 5px;
+        }
+        legend{
+            font-size: 25px;
+            color: grey;
+            font-weight: bold;
+        }
+        .pie_de_pagina{
+            text-align: center;
+        }
+        #firma{
+            font-weight: bold;
+            font-size: 2rem;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+<div class="encabezado">
+<h2><strong>CURRICULUM</strong> </h2>
+<img src="https://pregradovirtual.unemi.edu.ec/pluginfile.php/25611/user/icon/f1">
+</div>
+<fieldset class="cuerpo">
+    <legend>  DATOS PERSONALES  </legend>
+    <p ><strong>NOMBRES : {{data.nombres}}</strong></p>
+    <p ><strong>APELLIDOS : {{data.apellidos}}</strong></p>
+    <p ><strong>CEDULA : {{data.cedula}}</strong></p>
+    <p ><strong>SEXO : {{data.sexo}}</strong></p>
+    <p ><strong>FECHA DE NACIMIENTO : {{data.fecha_nacimiento}}</strong></p>
+    <p ><strong>CORREO : {{data.correo}}</strong></p>
+    <p ><strong>ESTADO CIVIL : {{data.estado_civil}}</strong></p>
+    <p ><strong>DIRECCION : {{data.direccion}}</strong></p>
+    <p ><strong>CANTON : {{data.canton}}</strong></p>
+    <p ><strong>PROVINCIA : {{data.provincia}}</strong></p>
+</fieldset>
+
+<p>&nbsp;</p>
+
+<p><fieldset class="cuerpo">
+    <legend>FORMACION ACADEMICA</legend>
+    <p><strong>PRIMARIA : {{data.primaria}};</strong></p>
+    <p><strong>SECUNDARIA : {{data.secundaria}};</strong></p>
+    <p><strong>TITULO : {{data.titulo}};</strong></p>
+</fieldset></p>
+
+<p>&nbsp;</p>
+
+<fieldset class="cuerpo">
+    <legend>CURSOS REALIZADOS</legend>
+    <p><strong>
+    <ul>
+    <li>{{data.curso1}}</li>
+    </ul>
+    </strong></p>
+    <p><strong>
+    <ul>
+    <li>{{data.curso2}}</li>
+    </ul>
+    </strong></p>
+</fieldset>
+
+<p>&nbsp;</p>
+
+<div class="pie_de_pagina">
+<p><strong id="firma" >FIRMA</strong></p>
+<p><strong >Firma1 : {{data.firma}}</strong></p>
+</div>
+</body>
+</html>
